@@ -1,0 +1,62 @@
+.iconInput {
+  top: 7px;
+  left: 10px;
+  fill: rgb(4, 4, 6);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #00000040;
+  background-color: #f6f6f6;
+  width: 450px;
+  padding: 20px;
+  margin: 0 auto 20px;
+}
+
+.containerContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wraperContact {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nameContact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.numberContact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.itemContact {
+  flex-basis: calc((100% - 10px) / 2);
+  border-radius: 10px;
+  border: 1px solid #8e8f99;
+  background-color: #f9f7f7;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.btnDelete {
+    padding: 10px 20px;
+}
