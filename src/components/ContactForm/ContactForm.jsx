@@ -9,11 +9,12 @@ const initialValues = {
 
 // Валідація за допомогою Yup
 const validationSchema = Yup.object({
-  name: Yup.string().required("Name is required"),
-  number: Yup.string()
-    .matches(/^[0-9]+$/, "Must be only digits")
+  name: Yup.string()
     .min(2, "Must be at least 2 characters")
     .max(15, "Must be 15 characters or less")
+    .required("Name is required"),
+  number: Yup.string()
+    .matches(/^\d{3}-\d{2}-\d{2}$/, "Must be in the format xxx-xx-xx")
     .required("Phone number is required"),
 });
 
